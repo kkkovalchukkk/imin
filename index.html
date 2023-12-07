@@ -14,13 +14,21 @@
 <body>
     <div class="page">
         <div class="overlay">
-            <div class="overlay__content">
-                <div class="swiper overlay__swiper">
-                    <div class="swiper-wrapper">
-
-                    </div>
-                </div>
-            </div>
+            <nav class="overlay__nav">
+                <a href="#what" class="overlay__nav-link">
+                    Что мы предлагаем
+                </a>
+                <a href="#price" class="overlay__nav-link">
+                    Цены
+                </a>
+                <a href="#request" class="overlay__nav-link">
+                    Онлайн заявка на ремонт
+                </a>
+                <a href="#contacts" class="overlay__nav-link">
+                    Контакты компании
+                </a>
+            </nav>
+            <a href="tel:+78005055321" class="overlay__tel-link">+7 800 505-53-21</a>
         </div>
         <header id="header" class="header">
             <div class="wrapper header__wrapper">
@@ -107,23 +115,24 @@
                             <img src="./assets/img/promo-img2.png" alt="" class="promo-section__group-img">
                             <div class="promo-section__group-item">
                                 <span class="promo-section__group-item-subtext">
-                                    <span class="promo-section__group-item-count">22</span> года
+                                    <span class="promo-section__group-item-count animated-counter"
+                                        id="target1">22</span> года
                                 </span>
                                 <p class="promo-section__group-item-text">
                                     производим оборудование
                                 </p>
                             </div>
                             <div class="promo-section__group-item">
-                                <span class="promo-section__group-item-count">
-                                    <span>1000</span>+
+                                <span class="promo-section__group-item-count animated-counter">
+                                    <span id="target2">1000</span>+
                                 </span>
                                 <p class="promo-section__group-item-text">
                                     моделей бьюти-оборудования
                                 </p>
                             </div>
                             <div class="promo-section__group-item">
-                                <span class="promo-section__group-item-count">
-                                    <span>220000</span>+
+                                <span class="promo-section__group-item-count animated-counter">
+                                    <span id="target3">220000</span>+
                                 </span>
                                 <p class="promo-section__group-item-text">
                                     выполненных заказов
@@ -228,7 +237,7 @@
                             гарантируя его <span>
                                 гарантируя его эффективную работу и
                                 долгий срок службы
-                                гарантируя его </span>.
+                                гарантируя его</span>.
                         </p>
                     </div>
                     <div class="what-section__menu">
@@ -410,6 +419,9 @@
 
                         </div>
                     </div>
+                    <a href="#request" class="btn price-section__mobile-btn">
+                        Заказать ремонт
+                    </a>
                 </div>
             </section>
             <section class="request-section" id="request">
@@ -451,6 +463,13 @@
                     <h2 class="subheading subheading--white">
                         Контакты
                     </h2>
+
+                    <p class="contacts-section__subtext">
+                        Вы можете оставить заявку или позвонить
+                        по телефону <a href="tel:+78005055321">+7 800 505-53-21</a>
+                    </p>
+
+
                     <div class="contacts-section__info">
                         <p>
                             <span>МОСКВА</span> (Самый большой Выставочный Зал)
@@ -488,8 +507,11 @@
         integrity="sha512-54QZ6V8x2x5v5+8JNy98/rP4Ui3CSNlv8KLVS5tTQJCx/Ag4jgUlVUqe54TJ3QLJYSVwt5xPbINvxX7A9XHdHQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/countup.js"></script>
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/burger.js"></script>
     <script src="./scripts/validation.js"></script>
+    <script type="module" src="./scripts/counter.js"></script>
 </body>
 
 </html>
